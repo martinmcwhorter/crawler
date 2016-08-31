@@ -40,7 +40,7 @@ namespace MartinMcwhorter.Crawler
             return _processedPages;
         }
 
-        public void AddLinksToUnProcessed(List<string> links)
+        private void AddLinksToUnProcessed(List<string> links)
         {
             links.ForEach(x => 
             {
@@ -51,13 +51,13 @@ namespace MartinMcwhorter.Crawler
             });
         }
 
-        public async Task<string> GetPage(string path)
+        private async Task<string> GetPage(string path)
         {
             var page = await _httpClient.GetStringAsync(path);
             return page;
         }
 
-        public List<string> ParseLinks(string page)
+        private List<string> ParseLinks(string page)
         {
             var links = new List<string>();
 
