@@ -73,7 +73,6 @@ namespace MartinMcwhorter.Crawler
                 {
                     links.Add(href.Groups[1].Value);
                 }
-            
             }  
 
             return links;
@@ -85,4 +84,3 @@ namespace MartinMcwhorter.Crawler
         }
     }
 }
-
