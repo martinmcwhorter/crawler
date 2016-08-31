@@ -32,4 +32,4 @@ The regexp parsers would be moved to its own classs or classes. It might make se
 5. Only handles 200 responses, should handle local redirects (301 and 302)
 6. Unit Tests are missing
 7. Does not handle ```?_escaped_fragment_=``` prerendered JavaScript pages
-8. 
+8. Does not cancel requests when response Content-Type is not ```text/html```
